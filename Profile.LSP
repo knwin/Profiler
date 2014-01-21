@@ -87,7 +87,7 @@
 		(command "text" "j" "BL" (list (+ startX txtind) (+ minY txtind)) txt "0" (strcat "Datum:" (rtos (/  minY scale)2 decPrec))); datum text
 		(command "text" "j" "ML" (list (+ startX txtind) (+ minY txtind (/ rowHigh1 -2) )) txt "0" "R.L"); Reduce Level text
 		(command "text" "j" "ML" (list (+ startX txtind) (+ minY txtind (/ rowHigh1 -1) (/ rowHigh2 -2) )) txt "0" "Length"); Length text
-		(command "text" "j" "BL" (list (+ startX txtind) (- minY (+ txtind txt rowHigh1 rowHigh2))) txt "0" (strcat "Vertical exaggeration factor = " (rtos scale 2 0)));
+		(command "text" "j" "BL" (list (+ startX txtind) (- minY (+ txtind txtind txt rowHigh1 rowHigh2))) txt "0" (strcat "Vertical exaggeration factor = " (rtos scale 2 0)));
 		(setq TEMP elist)
 		; labelling R.L and chaninage
 		(while TEMP
